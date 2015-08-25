@@ -1,6 +1,6 @@
 //Keep in mind that this is not endian-safe, not even safe in the broader sense.
 
-public uint8[] str2bin(string address_string)requires(address_string.data.length %2 == 0){
+	public uint8[] str2bin(string address_string)requires(address_string.data.length %2 == 0){
 		var data = address_string.to_utf8();
 		int i =0;
 		int j = 0;
